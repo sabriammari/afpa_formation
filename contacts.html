@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="application-name" content="Visual Studio Code">
+        <meta name="author" content="Sabri AMMARI">
+        <meta name="desciption" content="Création du site web de la formation DWWM à l'afpa">
+        <link rel="shortcut icon" href="Images/favicon.ico">
+        <title>AFPA Contacts Formation Développeur Web et Web Mobile</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="logoAfpa">
+            <img src="Images/logo.jpeg" alt="Logo de l'afpa">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formationDWWM.html">Formation de développeur Web</a></li>
+                <li><a href="temoignages.html">Témoignages</a></li>
+                <li><a href="references.html">Références</a></li>
+                <li><a href="contacts.html" class="contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <h1 class="titreContacts">Pour mieux vous accompagner, veuillez remplir le formulaire ci-dessous</h1>
+        <form id="formulaire">
+            <div class="coordonnees">
+                <p class="titre">Coordonnées:</p>
+                    <p><input id="prenom" name="prenom" type="text" placeholder="Prénom*" required="required" style="width: 300px;"></p>
+                    <p><input id="nom" name="nom" type="text" placeholder="Nom*" required="required" style="width: 300px;"></p>
+                    <p><input id="mail" name="mail" type="email" placeholder="email@mail.com*" required="required" style="width: 300px;"></p>
+                    <p><input id="phone" name="phone" type="tel" placeholder="06 05 04 03 02" style="width: 300px;"></p>
+                    <p>* Informations obligatoires
+            </div>
+            <div class="situation">
+                <p class="titre">Votre situation:</p>
+                    <p><input type="radio" id="demandeursDEmploi" name="situation">
+                    <label for="demandeursDEmploi">Demandeurs d'emploi</label></p>
+                    <p><input type="radio" id="salaries" name="situation">
+                    <label for="salaries">Salarié(e) en transition professionnelle</label></p>
+                    <p><input type="radio" id="autres" name="situation">
+                    <label for="autres">Autres</label></p>
+                    <textarea id="motif" name="motif" cols="50" rows="5" placeholder="Si autres, veuillez préciser:"></textarea>
+            </div>
+            <div class="modalites">
+                <p class="titre">Vos modalités d'apprentissage privilégiées:</p>
+                    <p><input type="checkbox" id="presentiel" name="presentiel">
+                    <label for="presentiel">En centre de formation (présentiel)</label></p>
+                    <p><input type="checkbox" id="aDistance" name="aDistance">
+                    <label for="aDistance">100 % à distance</label></p>
+                    <p><input type="checkbox" id="alternance" name="alternance">
+                    <label for="alternance">En contrat d'alternance avec l'entreprise</label></p>
+                    <p><input type="checkbox" id="sansPreference" name="sansPreference">
+                    <label for="sansPreference">Sans préférence</label></p>
+            </div>
+            <div class="region">
+                <p class="titre">Votre région d'origine:</p>
+                <select name=region class="choixRegions">
+                    <option>Choisissez votre région</option>
+                    <option>Auvergne-Rhône-Alpes</option>
+                    <option>Bourgogne-Franche-Comté</option>
+                    <option>Bretagne</option>
+                    <option>Centre-Val de Loire</option>
+                    <option>Corse</option>
+                    <option>Grand Est</option>
+                    <option>Hauts-de-France</option>
+                    <option>Île-de-France</option>
+                    <option>Normandie</option>
+                    <option>Nouvelle-Aquitaine</option>
+                    <option>Occitanie</option>
+                    <option>Pays de la Loire</option>
+                    <option>Provence-Alpes-Côte d'Azur</option>
+                    <option>Guadeloupe</option>
+                    <option>Martinique</option>
+                    <option>Guyane</option>
+                    <option>La Réunion</option>
+                    <option>Mayotte</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" class="boutonEnvoyer" value="Envoyer">
+            </div>
+        </form>
+    </body>
+</html>
